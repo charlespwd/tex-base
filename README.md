@@ -18,6 +18,7 @@ a directory that looks like this:
 ## Getting started
 ```bash
 git clone https://github.com/charlespwd/tex-base.git
+cd tex-base
 npm install
 vi includes/meat.tex
 grunt

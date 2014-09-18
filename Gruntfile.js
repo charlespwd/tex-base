@@ -47,5 +47,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-open');
 
   // Default task
-  grunt.registerTask('default', ['connect', 'open:pdf', 'watch']);
+  grunt.registerTask('default', ['latex', 'connect', 'open:pdf', 'watch']);
 };
