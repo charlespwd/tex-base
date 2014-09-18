@@ -1,0 +1,75 @@
+\documentclass[12pt,a4paper,final,oneside]{article}
+
+%% Dictionary
+\usepackage[english,french]{babel}
+
+%% Caption justification set to centered
+\usepackage[justification=centering]{caption}
+
+%% Enable special characters
+% \usepackage[utf8]{inputenc}
+
+%% Enable Pseudo code
+% \usepackage{algorithm}
+% \usepackage{algpseudocode}
+
+%% Everything Mathy
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+%% Enable appendix package
+\usepackage{appendix}
+
+%% Load aditional features for tables
+% \usepackage{array}
+
+%% Nicer tables
+% \usepackage{booktabs}
+
+%% Compressed, sorted lists of numerical citations
+\usepackage{cite}
+
+%% Nicer citation, i.e. include Section 1-3, whatever with \Cref or \cref
+\usepackage{cleveref}
+
+%% For use of png graphicx with pdflatex
+\usepackage{graphicx}
+\graphicspath{{.}{./img/}}
+
+%% Caption subfigures
+\usepackage{subcaption}
+
+%% \url{} for links in pdf.
+\usepackage{url}
+
+%% Set double spacing
+\usepackage{setspace}
+\doublespacing
+
+%% Enable an abstract
+% \newenvironment{abstractpage}
+%   {\cleardoublepage\vspace*{\fill}\thispagestyle{empty}}
+%   {\vfill\cleardoublepage}
+
+\begin{document}
+%% ABSTRACT
+% \input{./tex/abstract.tex}
+
+%% TITLE PAGE
+\input{./includes/titlepage.tex}
+\clearpage
+
+%% THE MEAT OF THE PROJECT
+\input{./includes/meat.tex}
+
+%% BIBLIOGRAPHY
+% \clearpage
+% \bibliographystyle{plain}
+% \bibliography{bib}
+
+%% APPENDIX
+% \clearpage
+% \input{./includes/appendix.tex}
+\end{document}
