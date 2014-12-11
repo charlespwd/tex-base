@@ -1,6 +1,9 @@
 module.exports = function (grunt) {
   'use strict';
   // Project configuration
+  var dist = 'dist/';
+  var jobname = 'exam-todo';
+  var path = [dist, jobname, '.pdf'].join('');
   grunt.initConfig({
     latex: {
       pdf: {
@@ -8,7 +11,7 @@ module.exports = function (grunt) {
         options: {
           engine: "pdflatex",
           outputDirectory: 'dist/',
-          jobname: 'result'
+          jobname: jobname
         }
       }
     },
@@ -22,7 +25,7 @@ module.exports = function (grunt) {
 
     open: {
       pdf: {
-        path: "dist/result.pdf"
+        path: path
       }
     },
 
@@ -35,7 +38,7 @@ module.exports = function (grunt) {
         options: {
           livereload: true
         },
-        files: ['dist/result.pdf'],
+        files: [path],
       },
     }
   });
